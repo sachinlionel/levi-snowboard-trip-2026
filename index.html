@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Levi Snowboard Trip 2026 – End the Season on a High Note</title>
-  <meta name="description" content="Join us for a legendary snowboarding trip to Levi, Finnish Lapland. Spring 2026, 3-5 riders, epic sessions under the midnight sun.">
+  <meta name="description" content="Join us for a legendary snowboarding trip to Levi, Finnish Lapland. May 1–10, 2026. 3-5 riders, epic spring sessions, optional Nitro Good Times Camp.">
+  <meta property="og:title" content="Levi Snowboard Trip 2026">
+  <meta property="og:description" content="End the season on a high note. May 1–10 in Finnish Lapland. Spring sessions, Nitro Camp, and good times with a small crew.">
+  <meta property="og:image" content="https://sachinlionel.github.io/levi-snowboard-trip-2026/flyer.png">
+  <meta property="og:url" content="https://sachinlionel.github.io/levi-snowboard-trip-2026/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Levi Snowboard Trip 2026">
+  <meta name="twitter:description" content="End the season on a high note. May 1–10 in Finnish Lapland.">
+  <meta name="twitter:image" content="https://sachinlionel.github.io/levi-snowboard-trip-2026/flyer.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -807,6 +816,7 @@
     <li><a href="#costs">Costs</a></li>
     <li><a href="#travel">Travel</a></li>
     <li><a href="#stay">Stay</a></li>
+    <li><a href="#packing">Packing</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="https://chat.whatsapp.com/EpR4AQy6pVuAyoQmEovE5y" target="_blank" rel="noopener" style="color:var(--accent-green)">Join Group</a></li>
   </ul>
@@ -815,7 +825,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-badge" style="background:rgba(249,115,22,0.15); border-color:rgba(249,115,22,0.3); color:var(--accent-warm);">RSVP by April 22nd</div>
+    <div class="hero-badge" style="background:rgba(249,115,22,0.15); border-color:rgba(249,115,22,0.3); color:var(--accent-warm);" id="rsvp-badge">RSVP by April 22nd</div>
     <div class="hero-badge">Spring 2026 &middot; Finnish Lapland</div>
     <h1>
       LEVI SNOWBOARD
@@ -1071,8 +1081,12 @@
         <span class="price individual">Required</span>
       </div>
       <div class="cost-item">
-        <span class="name">Nitro Camp (optional)</span>
+        <span class="name">Nitro Camp – shared room (optional)</span>
         <span class="price individual">€374</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Nitro Camp – single room (optional)</span>
+        <span class="price individual">€536.80</span>
       </div>
       <div class="cost-item">
         <span class="name">Travel to Levi</span>
@@ -1138,6 +1152,55 @@
   </div>
 </section>
 
+<!-- PACKING -->
+<section id="packing">
+  <div class="section-header fade-in">
+    <span class="section-label">Gear Up</span>
+    <h2>What to Bring</h2>
+    <p>Spring riding in Lapland — pack for sunshine and cold mornings.</p>
+  </div>
+  <div class="details-grid fade-in">
+    <div class="detail-card">
+      <div class="icon blue">&#127935;</div>
+      <h3>On the Mountain</h3>
+      <ul>
+        <li>Snowboard + bindings (or rent there)</li>
+        <li>Helmet (mandatory)</li>
+        <li>Back protector (mandatory)</li>
+        <li>Goggles (bright + low-light lenses)</li>
+        <li>Snowboard boots</li>
+        <li>Jacket & pants (waterproof, breathable)</li>
+        <li>Gloves or mitts</li>
+        <li>Base layers & mid layers</li>
+      </ul>
+    </div>
+    <div class="detail-card">
+      <div class="icon orange">&#9728;</div>
+      <h3>Spring Essentials</h3>
+      <ul>
+        <li>Sunscreen SPF 50+ (spring sun is strong)</li>
+        <li>Sunglasses</li>
+        <li>Lip balm with SPF</li>
+        <li>Light hoodie for warm afternoons</li>
+        <li>Neck gaiter / balaclava</li>
+        <li>Beanie</li>
+      </ul>
+    </div>
+    <div class="detail-card">
+      <div class="icon green">&#128188;</div>
+      <h3>Documents & Admin</h3>
+      <ul>
+        <li>Valid ID / passport</li>
+        <li>Travel insurance (covers winter sports)</li>
+        <li>Ski insurance</li>
+        <li>European Health Insurance Card (EHIC) if EU</li>
+        <li>Train/flight tickets</li>
+        <li>Accommodation confirmation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section id="about">
   <div class="section-header fade-in">
@@ -1192,6 +1255,26 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  const rsvpBadge = document.getElementById('rsvp-badge');
+  function updateCountdown() {
+    const deadline = new Date('2026-04-22T23:59:59+03:00');
+    const now = new Date();
+    const diff = deadline - now;
+    if (diff <= 0) {
+      rsvpBadge.textContent = 'RSVP Closed';
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    if (days > 0) {
+      rsvpBadge.textContent = `RSVP by April 22nd — ${days} day${days !== 1 ? 's' : ''} left`;
+    } else {
+      rsvpBadge.textContent = `RSVP by April 22nd — ${hours} hour${hours !== 1 ? 's' : ''} left`;
+    }
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
 </script>
 
 </body>
