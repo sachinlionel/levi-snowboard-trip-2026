@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levi Snowboard Trip 2026 – End the Season on a High Note</title>
+  <meta name="description" content="Join us for a legendary snowboarding trip to Levi, Finnish Lapland. Spring 2026, 3-5 riders, epic sessions under the midnight sun.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0e17;
+      --bg-card: #111827;
+      --bg-card-hover: #1a2236;
+      --accent: #38bdf8;
+      --accent-warm: #f97316;
+      --accent-green: #34d399;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e293b;
+      --gradient-hero: linear-gradient(135deg, #0c1220 0%, #1a1a40 40%, #0e2a47 100%);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.04em;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.8rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    nav .logo svg { width: 28px; height: 28px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--accent); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: var(--gradient-hero);
+      position: relative;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 600px 400px at 20% 30%, rgba(56, 189, 248, 0.08), transparent),
+        radial-gradient(ellipse 500px 300px at 80% 70%, rgba(249, 115, 22, 0.06), transparent);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--accent);
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 6rem);
+      line-height: 0.95;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--text-primary) 40%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero h1 span {
+      display: block;
+      background: linear-gradient(135deg, var(--accent-warm) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .hero .subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat .number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    .hero-stat .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.25s;
+      cursor: pointer;
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+
+    .btn-primary:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-primary);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* DETAILS GRID */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .detail-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .detail-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(56, 189, 248, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .detail-card .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .detail-card .icon.blue { background: rgba(56, 189, 248, 0.12); }
+    .detail-card .icon.orange { background: rgba(249, 115, 22, 0.12); }
+    .detail-card .icon.green { background: rgba(52, 211, 153, 0.12); }
+    .detail-card .icon.purple { background: rgba(168, 85, 247, 0.12); }
+
+    .detail-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .detail-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .detail-card ul {
+      list-style: none;
+      margin-top: 0.75rem;
+    }
+
+    .detail-card ul li {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 0.3rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    .detail-card ul li::before {
+      content: '→';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent-warm));
+      border-radius: 1px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.35rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+    }
+
+    .timeline-item .date {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .timeline-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-item p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    /* COSTS TABLE */
+    .costs-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .cost-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cost-block::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .cost-block.shared::before {
+      background: linear-gradient(90deg, var(--accent-green), var(--accent));
+    }
+
+    .cost-block.individual::before {
+      background: linear-gradient(90deg, var(--accent-warm), #ef4444);
+    }
+
+    .cost-block h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .cost-block .cost-subtitle {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .cost-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cost-item:last-child { border-bottom: none; }
+
+    .cost-item .name {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    .cost-item .price {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .cost-item .price.shared { color: var(--accent-green); }
+    .cost-item .price.individual { color: var(--accent-warm); }
+
+    .cost-note {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background: rgba(56, 189, 248, 0.06);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* NITRO CAMP SECTION */
+    .nitro-highlight {
+      background: linear-gradient(135deg, rgba(249, 115, 22, 0.08) 0%, rgba(56, 189, 248, 0.05) 100%);
+      border: 1px solid rgba(249, 115, 22, 0.2);
+      border-radius: 16px;
+      padding: 3rem;
+      margin: 3rem 0;
+      position: relative;
+    }
+
+    .nitro-highlight .badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--accent-warm);
+      padding: 0.3rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .nitro-highlight h3 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .nitro-highlight p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .nitro-highlight .nitro-price {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: var(--accent-warm);
+      margin: 1rem 0;
+    }
+
+    .nitro-highlight .nitro-price span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .nitro-includes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .nitro-includes li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .nitro-includes li .check {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    /* CAMP SCHEDULE */
+    .camp-schedule {
+      margin-top: 2rem;
+    }
+
+    .camp-day {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .camp-day summary {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: 500;
+      transition: background 0.2s;
+      list-style: none;
+    }
+
+    .camp-day summary::-webkit-details-marker { display: none; }
+
+    .camp-day summary:hover { background: var(--bg-card-hover); }
+
+    .camp-day summary .day-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      color: var(--accent-warm);
+      min-width: 140px;
+    }
+
+    .camp-day summary .day-title {
+      color: var(--text-primary);
+    }
+
+    .camp-day summary .chevron {
+      margin-left: auto;
+      transition: transform 0.2s;
+      color: var(--text-muted);
+    }
+
+    .camp-day[open] summary .chevron { transform: rotate(90deg); }
+
+    .camp-day .day-content {
+      padding: 0 1.5rem 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .camp-day .day-content ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .camp-day .day-content li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .camp-day .day-content li .time {
+      font-weight: 600;
+      color: var(--accent);
+      min-width: 60px;
+      flex-shrink: 0;
+    }
+
+    /* DATE OPTIONS */
+    .date-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .date-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+    }
+
+    .date-card.recommended {
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);
+    }
+
+    .date-card.recommended::after {
+      content: 'RECOMMENDED';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--bg-dark);
+      padding: 0.2rem 0.8rem;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .date-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .date-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .date-card .date-range {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
+
+    .date-card .date-detail {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    .date-card .date-tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .tag-green {
+      background: rgba(52, 211, 153, 0.12);
+      color: var(--accent-green);
+    }
+
+    .tag-orange {
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--accent-warm);
+    }
+
+    /* TRAVEL */
+    .travel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .travel-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: all 0.3s;
+    }
+
+    .travel-card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+    }
+
+    .travel-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .travel-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    /* ABOUT */
+    .about-block {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.06) 0%, rgba(52, 211, 153, 0.04) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-warm));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: var(--bg-dark);
+      flex-shrink: 0;
+    }
+
+    .about-text h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-text p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .about-tag {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 0.3rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      color: var(--accent);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero h1 { font-size: 3rem; }
+      .hero-stats { gap: 1.5rem; }
+      .about-block { flex-direction: column; text-align: center; }
+      .about-tags { justify-content: center; }
+      .nitro-highlight { padding: 2rem; }
+      section { padding: 3rem 1.25rem; }
+    }
+
+    /* SCROLL ANIMATION */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 2L2 22h20L12 2z"/>
+      <path d="M8 16h8" opacity="0.5"/>
+    </svg>
+    LEVI 2026
+  </a>
+  <ul>
+    <li><a href="#dates">Dates</a></li>
+    <li><a href="#details">Details</a></li>
+    <li><a href="#nitro">Nitro Camp</a></li>
+    <li><a href="#costs">Costs</a></li>
+    <li><a href="#travel">Travel</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Spring 2026 &middot; Finnish Lapland</div>
+    <h1>
+      LEVI SNOWBOARD
+      <span>TRIP 2026</span>
+    </h1>
+    <p class="subtitle">End the season on a high note. Epic spring sessions, midnight sun vibes, and legendary powder in Lapland.</p>
+    <div class="cta-group">
+      <a href="#dates" class="btn btn-primary">Check the Dates</a>
+      <a href="#nitro" class="btn btn-outline">Nitro Camp Details</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="number">3–5</div>
+        <div class="label">Riders</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">6–7</div>
+        <div class="label">Riding Days</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">531m</div>
+        <div class="label">Summit Elevation</div>
+      </div>
+      <div class="hero-stat">
+        <div class="number">43</div>
+        <div class="label">Slopes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATES -->
+<section id="dates">
+  <div class="section-header fade-in">
+    <span class="section-label">When</span>
+    <h2>Pick Your Window</h2>
+    <p>Two flexible date options. Both give us time to rest, ride hard, and soak in the spring atmosphere.</p>
+  </div>
+  <div class="date-options fade-in">
+    <div class="date-card">
+      <h3>Option A</h3>
+      <div class="date-range">25 Apr – 3 May</div>
+      <p class="date-detail">9 nights, ~6-7 riding days<br>Rest days built in for recovery</p>
+      <span class="date-tag tag-green">Earlier spring snow</span>
+    </div>
+    <div class="date-card recommended">
+      <h3>Option B</h3>
+      <div class="date-range">1 May – 10 May</div>
+      <p class="date-detail">9 nights, ~6-7 riding days<br>Overlaps with Nitro Good Times Camp (May 6-10)</p>
+      <span class="date-tag tag-orange">Includes Nitro Camp</span>
+    </div>
+  </div>
+  <div class="cost-note" style="margin-top: 1.5rem;">
+    Check-in/check-out dates are flexible. We can adjust by a day or two based on travel and apartment availability.
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section id="details">
+  <div class="section-header fade-in">
+    <span class="section-label">The Plan</span>
+    <h2>What's the Vibe</h2>
+    <p>A crew of passionate riders heading north to close out the season in style.</p>
+  </div>
+  <div class="details-grid fade-in">
+    <div class="detail-card">
+      <div class="icon blue">&#9968;</div>
+      <h3>Location</h3>
+      <p>Levi Ski Resort, Kittil&auml;, Finnish Lapland. One of Finland's largest resorts with 43 slopes, terrain parks, and backcountry access.</p>
+    </div>
+    <div class="detail-card">
+      <div class="icon orange">&#9889;</div>
+      <h3>Crew Size</h3>
+      <p>3 to 5 riders. Small enough to stay agile, big enough to share the stoke. All levels welcome.</p>
+    </div>
+    <div class="detail-card">
+      <div class="icon green">&#127968;</div>
+      <h3>Accommodation</h3>
+      <p>Rented apartment close to the resort. Shared costs keep it affordable – estimated around &euro;50/person per night, could be less with more people.</p>
+    </div>
+    <div class="detail-card">
+      <div class="icon purple">&#127775;</div>
+      <h3>Spring Conditions</h3>
+      <p>Late April to early May means long daylight hours, soft spring snow, park sessions, and après-ski in the sun.</p>
+    </div>
+  </div>
+</section>
+
+<!-- NITRO CAMP -->
+<section id="nitro">
+  <div class="section-header fade-in">
+    <span class="section-label">Optional Add-On</span>
+    <h2>Nitro Good Times Camp</h2>
+    <p>Pro-level coaching, test boards, and riding with Nitro team riders. May 6–10 at Break Sokos Hotel Levi.</p>
+  </div>
+
+  <div class="nitro-highlight fade-in">
+    <span class="badge">Official Nitro Event</span>
+    <h3>3-Day Snowboard Camp at Levi</h3>
+    <p>A premium coaching experience combining on-slope training, riding sessions with pro athletes, board testing, and cross-training activities. All ages and skill levels welcome.</p>
+    <div class="nitro-price">€374 <span>/ person – full package</span></div>
+    <ul class="nitro-includes">
+      <li><span class="check">&#10003;</span> 4 nights at Break Sokos Hotel Levi (double rooms)</li>
+      <li><span class="check">&#10003;</span> 4× breakfast, lunch, and dinner</li>
+      <li><span class="check">&#10003;</span> 4× spa access at Levi Wellness Club</li>
+      <li><span class="check">&#10003;</span> Pro coaching & full camp program</li>
+      <li><span class="check">&#10003;</span> Nitro Test Center – demo boards</li>
+      <li><span class="check">&#10003;</span> Ride with Nitro team athletes</li>
+      <li><span class="check">&#10003;</span> Cross-training: parkour, yoga, skateboarding</li>
+      <li><span class="check">&#10003;</span> Lappi Cup slopestyle entry (optional)</li>
+    </ul>
+    <div class="cost-note" style="margin-top:1.5rem">
+      <strong>Lift tickets:</strong> 20% discount available via
+      <a href="https://www.suomisport.fi/events/03e9997d-b76a-48da-b9de-4970da5e23bb" target="_blank" rel="noopener" style="color:var(--accent)">Suomisport link</a>.
+      Helmet and back protector are mandatory on slopes.
+    </div>
+    <div style="margin-top:1rem">
+      <a href="https://www.sokoshotels.fi/hotellit/kittila/break-sokos-hotel-levi/nitro-good-times-camp-levilla-752026" class="btn btn-primary" target="_blank" rel="noopener">Book via Sokos Hotels</a>
+    </div>
+  </div>
+
+  <div class="camp-schedule fade-in">
+    <h3 style="font-size:1.5rem; margin-bottom:1rem;">Camp Schedule</h3>
+
+    <details class="camp-day">
+      <summary>
+        <span class="day-label">Wed, May 6</span>
+        <span class="day-title">Arrival & Welcome Dinner</span>
+        <span class="chevron">&#9654;</span>
+      </summary>
+      <div class="day-content">
+        <ul>
+          <li><span class="time">16:00</span>Arrive at Levi, check-in at Sokos Hotel Levi</li>
+          <li><span class="time">19:00</span>Welcome dinner at the hotel</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="camp-day">
+      <summary>
+        <span class="day-label">Thu, May 7</span>
+        <span class="day-title">Day 1 – Ride with Pros</span>
+        <span class="chevron">&#9654;</span>
+      </summary>
+      <div class="day-content">
+        <ul>
+          <li><span class="time">09:30</span>Meet Nitro pro riders</li>
+          <li><span class="time">10:00</span>Warm-up session</li>
+          <li><span class="time">10:30</span>Ride with Pros on the mountain</li>
+          <li><span class="time">12:00</span>Lunch at Ravintola Gondoli</li>
+          <li><span class="time">16:00</span>Parkour training at Levi Wellness Club</li>
+          <li><span class="time">18:00</span>Dinner at hotel</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="camp-day">
+      <summary>
+        <span class="day-label">Fri, May 8</span>
+        <span class="day-title">Day 2 – Test Center & Coaching</span>
+        <span class="chevron">&#9654;</span>
+      </summary>
+      <div class="day-content">
+        <ul>
+          <li><span class="time">09:30</span>Morning warm-up</li>
+          <li><span class="time">10:00</span>Nitro Test Center & coaching sessions</li>
+          <li><span class="time">10:30</span>Ride with Pros & training</li>
+          <li><span class="time">12:00</span>Lunch at Ravintola Gondoli</li>
+          <li><span class="time">16:00</span>Skate session at Levi Activity Park</li>
+          <li><span class="time">17:30</span>Spa evening at Levi Spa</li>
+          <li><span class="time">19:00</span>Dinner at hotel</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="camp-day">
+      <summary>
+        <span class="day-label">Sat, May 9</span>
+        <span class="day-title">Day 3 – Final Sessions & Movie Night</span>
+        <span class="chevron">&#9654;</span>
+      </summary>
+      <div class="day-content">
+        <ul>
+          <li><span class="time">09:30</span>Morning warm-up</li>
+          <li><span class="time">10:00</span>Nitro Test Center & coaching</li>
+          <li><span class="time">12:00</span>Lunch at Ravintola Gondoli</li>
+          <li><span class="time">16:00</span>Yoga or snowboard-specific strength training</li>
+          <li><span class="time">19:00</span>Dinner at hotel</li>
+          <li><span class="time">20:00</span>Movie night</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="camp-day">
+      <summary>
+        <span class="day-label">Sun, May 10</span>
+        <span class="day-title">Lappi Cup Slopestyle Finals</span>
+        <span class="chevron">&#9654;</span>
+      </summary>
+      <div class="day-content">
+        <ul>
+          <li><span class="time">All day</span>Lappi Cup local slopestyle competition (free entry for camp participants)</li>
+          <li><span class="time">12:00</span>Lunch at Ravintola Gondoli</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- COSTS -->
+<section id="costs">
+  <div class="section-header fade-in">
+    <span class="section-label">Budget</span>
+    <h2>Cost Breakdown</h2>
+    <p>Transparent cost split. Shared expenses are divided equally, individual costs are on you.</p>
+  </div>
+  <div class="costs-section fade-in">
+    <div class="cost-block shared">
+      <h3>Shared Costs</h3>
+      <p class="cost-subtitle">Split equally among the group</p>
+      <div class="cost-item">
+        <span class="name">Apartment (per person/night)</span>
+        <span class="price shared">~€50</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Shared groceries & cooking</span>
+        <span class="price shared">TBD</span>
+      </div>
+      <div class="cost-note">
+        Apartment cost can go down with more people. Final price depends on the place we book.
+      </div>
+    </div>
+    <div class="cost-block individual">
+      <h3>Individual Costs</h3>
+      <p class="cost-subtitle">Each person covers their own</p>
+      <div class="cost-item">
+        <span class="name">Ski/Snowboard pass</span>
+        <span class="price individual">Varies</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Equipment rentals (if needed)</span>
+        <span class="price individual">Varies</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Daily groceries & food</span>
+        <span class="price individual">~€20-40/day</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Eating out at restaurants</span>
+        <span class="price individual">~€15-40/meal</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Resort lessons (optional)</span>
+        <span class="price individual">Varies</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Ski & travel insurance</span>
+        <span class="price individual">Required</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Nitro Camp (optional)</span>
+        <span class="price individual">€374</span>
+      </div>
+      <div class="cost-item">
+        <span class="name">Travel to Levi</span>
+        <span class="price individual">Varies</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAVEL -->
+<section id="travel">
+  <div class="section-header fade-in">
+    <span class="section-label">Getting There</span>
+    <h2>Travel to Levi</h2>
+    <p>Multiple ways to reach Finnish Lapland. Choose what works for you.</p>
+  </div>
+  <div class="travel-grid fade-in">
+    <div class="travel-card">
+      <h4>&#128644; Train from Helsinki</h4>
+      <p>Overnight sleeper train Helsinki → Kolari (nearest station to Levi). ~12 hours. Bus/taxi connection from Kolari to Levi (~40 min). Book early on <a href="https://www.vr.fi" target="_blank" style="color:var(--accent)">VR.fi</a> for best prices.</p>
+    </div>
+    <div class="travel-card">
+      <h4>&#9992; Fly to Kittil&auml;</h4>
+      <p>Direct flights from Helsinki to Kittil&auml; Airport (KTT), ~1.5 hours. Levi is 15 minutes from the airport. Finnair and Norwegian operate this route.</p>
+    </div>
+    <div class="travel-card">
+      <h4>&#128663; Drive / Car Rental</h4>
+      <p>~1,100 km from Helsinki. A road trip through Lapland. Consider splitting the drive over two days. A car is also handy for local trips once in Levi.</p>
+    </div>
+    <div class="travel-card">
+      <h4>&#127758; From Abroad</h4>
+      <p>Fly into Helsinki (HEL) and connect to Kittil&auml; or take the night train. Some connecting flights via Stockholm or Tromsø may also work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header fade-in">
+    <span class="section-label">Your Host</span>
+    <h2>About Me</h2>
+  </div>
+  <div class="about-block fade-in">
+    <div class="about-avatar">S</div>
+    <div class="about-text">
+      <h3>The Organizer</h3>
+      <p>Outdoor sports enthusiast with a decade of hiking, climbing, surfing, and snowboarding under the belt. Snowboarding is the newest addition to the hobby list — and the hunger to ride more is real.</p>
+      <p>This trip is about ending the 2025/26 season with a bang, progressing our skills, and sharing the stoke with a small crew of like-minded riders.</p>
+      <div class="about-tags">
+        <span class="about-tag">Hiking</span>
+        <span class="about-tag">Climbing</span>
+        <span class="about-tag">Surfing</span>
+        <span class="about-tag">Snowboarding</span>
+        <span class="about-tag">Adventure</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Levi Snowboard Trip 2026 &middot; Let's end the season on a high note</p>
+  <p style="margin-top: 0.5rem;">
+    <a href="https://www.levi.fi/en" target="_blank">Levi Ski Resort</a> &middot;
+    <a href="https://www.sokoshotels.fi/hotellit/kittila/break-sokos-hotel-levi/nitro-good-times-camp-levilla-752026" target="_blank">Nitro Good Times Camp</a>
+  </p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
